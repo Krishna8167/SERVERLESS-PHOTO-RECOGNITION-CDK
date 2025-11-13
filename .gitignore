@@ -1,0 +1,50 @@
+# ============================================================
+# Node.js dependencies
+# ============================================================
+node_modules/
+lambda/**/node_modules/
+
+# ============================================================
+# CDK output & build artifacts
+# ============================================================
+cdk.out/
+dist/
+
+# TypeScript build results
+*.js
+*.d.ts
+*.js.map
+
+# Keep actual TS source
+!bin/*.ts
+!lib/*.ts
+
+# Keep Lambda JS code + package.json
+!lambda/**/*.js
+!lambda/**/package.json
+
+# Logs & lockfiles
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+lambda/**/package-lock.json
+
+# Env / secrets
+.env
+*.pem
+
+# Scripts (optional)
+call-api.sh
+call-api-pro.sh
+get-stack-info.sh
+show-token.sh
+
+# Test images / assets
+cat.jpg
+camera.jpg
+
+# System/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

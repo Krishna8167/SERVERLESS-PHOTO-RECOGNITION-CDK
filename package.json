@@ -1,0 +1,19 @@
+{
+  "name": "serverless-photo-recognition-cdk",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:ts && npm run build:lambda",
+    "build:ts": "tsc",
+    "build:lambda": "cd lambda/indexer && npm install && cd ../search && npm install && cd ../delete && npm install",
+    "synth": "cdk synth",
+    "deploy": "cdk deploy --all",
+    "destroy": "cdk destroy --all"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "aws-cdk-lib": "^2.130.0",
+    "constructs": "^10.3.0",
+    "typescript": "^5.3.0"
+  }
+}

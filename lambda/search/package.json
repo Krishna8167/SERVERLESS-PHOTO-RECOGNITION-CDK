@@ -1,0 +1,10 @@
+{
+  "name": "search",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "commonjs",
+  "dependencies": {
+    "aws-sdk": "^2.1584.0",
+    "aws4": "^1.13.0"
+  }
+}
