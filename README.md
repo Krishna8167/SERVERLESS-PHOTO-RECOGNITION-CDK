@@ -34,18 +34,27 @@ The platform automatically analyzes uploaded images using Amazon Rekognition, st
 
 ## Project Structure
 
+```
 serverless-photo-recognition-cdk/
 ├── bin/
+│   └── serverless-photo-recognition-cdk.ts
 ├── lib/
+│   └── serverless-photo-recognition-cdk-stack.ts
 ├── lambda/
-│ ├── indexer/
-│ └── search/
+│   ├── indexer/
+│   │   └── index.ts
+│   └── search/
+│       └── index.ts
 ├── scripts/
+│   ├── call-api-pro.sh
+│   ├── get-stack-info.sh
+│   └── ...
 ├── package.json
 ├── cdk.json
 ├── tsconfig.json
 ├── README.md
 └── STARTUP.md
+```
 
 yaml
 Copy code
