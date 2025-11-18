@@ -56,8 +56,6 @@ serverless-photo-recognition-cdk/
 └── STARTUP.md
 ```
 
-yaml
-Copy code
 
 ---
 
@@ -93,13 +91,13 @@ Copy code
 npx cdk deploy --profile cdk-deployer --region us-east-1
 
 shell
-Copy code
+ 
 
 ### 2. Upload an Image
 aws s3 cp ./camera.jpg s3://<your-bucket>/ --region us-east-1
 
 shell
-Copy code
+ 
 
 ### 3. Check Indexing
 View Lambda indexer logs.
@@ -108,19 +106,16 @@ View Lambda indexer logs.
 ./call-api-pro.sh camera
 
 shell
-Copy code
 
 ### 5. Cleanup
 npx cdk destroy --profile cdk-deployer --region us-east-1
 
 arduino
-Copy code
+ 
 
 To remove CDK bootstrap:
 npx cdk bootstrap --destroy --profile cdk-deployer --region us-east-1
 
-yaml
-Copy code
 
 ---
 
